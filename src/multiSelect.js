@@ -4,13 +4,12 @@
  * @module multiSelect
  */
 
-var  jsDataSet = require('jsDataSet'),
-    DataTable = jsDataSet.dataTable;
 var Deferred = require("JQDeferred");
 var util = require('util');
 var _ = require('lodash');
 
 /**
+ * @private
  * @property {DataQuery} $dq
  */
 var $dq = require('jsDataQuery');
@@ -147,7 +146,7 @@ OptimizedMultiCompare.prototype.joinWith = function (other) {
 
 /**
  * Gets the overall filter for this multi select
- * @method getPartialFilter
+ * @method getFilter
  * @private
  * @returns {sqlFun}
  */
@@ -228,7 +227,7 @@ Select.prototype.getFilter = function () {
  * sets the manual filter for this Select. We call this kind of filtering  not-optimized
  * @method where
  * @param {sqlFun} filter
- * returns {Select} this
+ * @returns {Select} this
  */
 Select.prototype.where = function(filter){
   this.filter = filter;
@@ -239,6 +238,7 @@ Select.prototype.where = function(filter){
 /**
  * Sets a static filter for this condition
  * @param {sqlFun} filter
+ * @returns {Select} this
  */
 Select.prototype.staticFilter = function (filter) {
   this.staticF = filter;
@@ -276,7 +276,7 @@ Select.prototype.multiCompare = function (multiComp) {
 /**
  * Sets the table associated to this select
  * @method from
- * @param tableName
+ * @param {string} tableName
  * @returns {Select}
  */
 Select.prototype.from = function (tableName) {
