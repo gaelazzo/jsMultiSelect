@@ -9,7 +9,7 @@
  */
 
 var $q = require('jsDataQuery');
-var mSel = require('../../src/multiSelect');
+var mSel = require('../../src/jsMultiSelect');
 var Select = mSel.Select;
 var groupSelect = mSel.groupSelect;
 var groupSelectStep = mSel.groupSelectStep;
