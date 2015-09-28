@@ -9,7 +9,7 @@
   "authors": [
     "Gaetano Lazzo <gaetano.lazzo@gmail.com>"
   ],
-  "description": "Query expressions translatable into Sql conditions",
+  "description": "Creating optimized sql commands to make multiple select with a single batch",
   "main": ["src/jsMultiSelect.js"],
   "files": [
     "src"
