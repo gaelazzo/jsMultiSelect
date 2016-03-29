@@ -8,8 +8,8 @@
   },
   "dependencies": {
     "lodash": "~3.1.0",
-    "JQDeferred": "^2.1.0",
-    "jsDataQuery": "git://github.com/gaelazzo/jsDataQuery.git"
+    "jsDataQuery": "git://github.com/gaelazzo/jsDataQuery.git",
+    "jsDeferred": "git://github.com/gaelazzo/jsDeferred.git"
 
   },
   "devDependencies": {

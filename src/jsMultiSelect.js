@@ -1,28 +1,25 @@
 'use strict';
 /**
  * provides a mechanism to make multiple select with a single sql command
-
+ * @module optimizeComparing
  */
 
-var Deferred = require("JQDeferred");
+var Deferred = require("jsDeferred");
 var util = require('util');
 var _ = require('lodash');
 
-/**
- * @private
- * @property {DataQuery} $dq
- */
 var $dq = require('jsDataQuery');
 
 
 /**
+ * Used to compose query
  * @class MultiCompare
  */
 
 
 /**
  * Multi compare is a class indicating the comparison of n given fields with n given values
- * @public
+ * @method MultiCompare
  * @param {String[]} fields
  * @param {object[]} values
  * @constructor
@@ -251,6 +248,7 @@ function Select(columnList) {
 
 
 
+  
   this.omc = null;
 
   this.isOptimized = false;
@@ -275,14 +273,14 @@ Select.prototype = {
   /**
    * @public
    * @property omc
-   * @type OptimizedMultiCompare
+   * @type OptimizedMultiCompare|null
    */
   omc: null,
 
   /**
    * @public
    * @property  alias
-   * @type string
+   * @type string|null
    */
   alias: null,
 
@@ -371,7 +369,7 @@ Select.prototype = {
   /**
    * sets the top options for the query
    * @method top
-   * @param {string} n
+   * @param {string} [n]
    * @returns {string|Select}
    */
   top: function (n) {

@@ -2,5 +2,8 @@
 <project version="4">
   <component name="JavaScriptLibraryMappings">
     <file url="file://$PROJECT_DIR$" libraries="{jsMultiSelect node_modules}" />
+    <file url="PROJECT" libraries="{async-DefinitelyTyped, jasmine-DefinitelyTyped, jsMetaDataLibrary, jsMultiSelect node_modules, lodash-DefinitelyTyped}" />
+    <includedPredefinedLibrary name="Node.js Core" />
+    <excludedPredefinedLibrary name="HTML" />
   </component>
 </project>
