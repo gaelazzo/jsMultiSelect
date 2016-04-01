@@ -358,7 +358,7 @@ describe('multiSelect', function () {
                     return new StubObj(el);
                 }),
                 res = groupSelectStep(list, 'joinFun');
-            expect(_.pluck(res, 'value')).toEqual(['a1a3a5', 'b1b2', 'c1']);
+            expect(_.map(res, 'value')).toEqual(['a1a3a5', 'b1b2', 'c1']);
         });
 
         it('should group basing on join function (2)', function () {
@@ -367,7 +367,7 @@ describe('multiSelect', function () {
                     return new StubObj(el);
                 }),
                 res = groupSelectStep(list, 'joinFun');
-            expect(_.pluck(res, 'value')).toEqual(['q0', 'a1a3a5', 'b1b2', 'c1c2c3c4', 'd1']);
+            expect(_.map(res, 'value')).toEqual(['q0', 'a1a3a5', 'b1b2', 'c1c2c3c4', 'd1']);
 
         });
 
@@ -408,7 +408,7 @@ describe('multiSelect', function () {
                     return new StubObj(el);
                 }),
                 res = groupSelect(list);
-            expect(_.pluck(res, 'value')).toEqual(['A1A5:a3', 'B1B2', 'C2C3:c1:c4', 'q0', 'd1']);
+            expect(_.map(res, 'value')).toEqual(['A1A5:a3', 'B1B2', 'C2C3:c1:c4', 'q0', 'd1']);
 
         });
 
@@ -418,7 +418,7 @@ describe('multiSelect', function () {
                     return new StubObj(el);
                 }),
                 res = groupSelect(list);
-            expect(_.pluck(res, 'value')).toEqual(['A5:a1:a3', 'C4:c1:c2:c3', 'q0', 'b1:b2', 'd1']);
+            expect(_.map(res, 'value')).toEqual(['A5:a1:a3', 'C4:c1:c2:c3', 'q0', 'b1:b2', 'd1']);
         });
 
         it('groupSelect test set 3', function () {
@@ -427,7 +427,7 @@ describe('multiSelect', function () {
                     return new StubObj(el);
                 }),
                 res = groupSelect(list);
-            expect(_.pluck(res, 'value')).toEqual(['q0', 'a1:a3:a5', 'b1:b2', 'c1:c2:c3:c4', 'd1']);
+            expect(_.map(res, 'value')).toEqual(['q0', 'a1:a3:a5', 'b1:b2', 'c1:c2:c3:c4', 'd1']);
         });
 
         it('groupSelect should call both appendTo and  optimizedAppendTo if there are optimized select', function () {

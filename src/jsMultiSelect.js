@@ -133,12 +133,13 @@ OptimizedMultiCompare.prototype = {
     if (!this.isMultiValue) {
       return $dq.mcmp(this.fields, this.values);
     }
+    var that = this;
     return $dq.and(_.map(this.fields, function (el, index) {
-      if (index === this.multiValPosition) {
-        return $dq.isIn(el, this.multiValArray);
+      if (index === that.multiValPosition) {
+        return $dq.isIn(el, that.multiValArray);
       }
-      return $dq.eq(el, this.values[index]);
-    }, this));
+      return $dq.eq(el, that.values[index]);
+    }));
   },
 
 
@@ -163,7 +164,7 @@ OptimizedMultiCompare.prototype = {
     if (index !== this.multiValPosition) {
       return this.values[index] === value;
     }
-    return _.contains(this.multiValArray, value);
+    return _.includes(this.multiValArray, value);
   },
 
 
