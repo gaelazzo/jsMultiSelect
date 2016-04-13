@@ -5,7 +5,8 @@ env:
   - CXX=g++-4.8
 before_install:
   - npm install -g grunt-cli
-install: npm install
+install: 
+ - npm install
 
 
 
