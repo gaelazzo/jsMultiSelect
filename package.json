@@ -18,13 +18,14 @@
     "grunt-contrib-yuidoc": "1.0.0",
     "jasmine-core": "2.2.0",
     "jasmine-node": "2.0.0-beta4",
-    "grunt-jasmine-node-new": "https://github.com/gaelazzo/grunt-jasmine-node",
+    "grunt-jasmine-node": "git://github.com/gaelazzo/grunt-jasmine-node.git",
     "jasmine-collection-matchers":"*",
-
-    "load-grunt-tasks": "^3.1.0",
+    "load-grunt-tasks": "^3.4.1",
     "time-grunt": "^1.0.0"
-
   },
+
+
+
   "repository": {
     "type": "git",
     "url": "https://github.com/gaelazzo/jsMultiSelect"
