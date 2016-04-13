@@ -1,6 +1,6 @@
 {
   "name": "jsMultiSelect",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Creating optimized SELECT sql commands to make multiple select with a single batch",
   "main": "src/jsMultiSelect.js",
   "scripts": {
