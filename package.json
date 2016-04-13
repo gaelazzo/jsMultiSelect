@@ -8,8 +8,8 @@
   },
   "dependencies": {
     "lodash": "4.6.1",
-    "jsDataQuery": "git://github.com/gaelazzo/jsDataQuery.git",
-    "jsDeferred": "git://github.com/gaelazzo/jsDeferred.git"
+    "jsDataQuery": "https://github.com/gaelazzo/jsDataQuery",
+    "jsDeferred": "https://github.com/gaelazzo/jsDeferred"
 
   },
   "devDependencies": {
@@ -18,7 +18,7 @@
     "grunt-contrib-yuidoc": "1.0.0",
     "jasmine-core": "2.2.0",
     "jasmine-node": "2.0.0-beta4",
-    "grunt-jasmine-node": "git://github.com/gaelazzo/grunt-jasmine-node.git",
+    "grunt-jasmine-node": "https://github.com/gaelazzo/grunt-jasmine-node",
     "jasmine-collection-matchers":"*",
     "load-grunt-tasks": "^3.4.1",
     "time-grunt": "^1.0.0"
