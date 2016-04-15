@@ -125,3 +125,7 @@ Appends this Select to another one or-joining their conditions, returns true if 
 
 # groupSelect(selectList) #
 This is a standalone function, which takes a list of Select to same table and evaluates an equivalent Select joining all their input filters
+
+
+
+![](https://travis-ci.org/gaelazzo/jsMultiSelect.svg?branch=master)
