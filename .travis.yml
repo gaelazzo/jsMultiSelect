@@ -1,12 +1,20 @@
 language: node_js
 node_js:
-  - "5" 
+  - "8"
 env:
   - CXX=g++-4.8
 before_install:
   - npm install -g grunt-cli
-install: 
- - npm install
+
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - g++-4.8
 
 
 
+install:
+
+  - npm install
