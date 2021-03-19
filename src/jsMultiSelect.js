@@ -3,9 +3,7 @@
  * provides a mechanism to make multiple select with a single sql command
  * @module optimizeComparing
  */
-
-var Deferred = require("jsDeferred");
-var util = require('util');
+const util = require('util');
 var _ = require('lodash');
 
 var $dq = require('jsDataQuery');
@@ -218,7 +216,7 @@ OptimizedMultiCompare.prototype = {
     this.multiValArray = [this.values[posDiff], other.values[posDiff]];
     return true;
   }
-}
+};
 
 
 
@@ -448,7 +446,7 @@ Select.prototype = {
   }
 
 
-}
+};
 
 
 
@@ -475,7 +473,7 @@ Select.prototype.where = function(filter){
 Select.prototype.staticFilter = function (filter) {
   this.staticF = filter;
   return this;
-}
+};
 
 
 /**
