@@ -19,7 +19,7 @@
     "grunt-jasmine-node": "https://github.com/gaelazzo/grunt-jasmine-node",
     "jasmine-collection-matchers": "*",
     "grunt-karma": "^0.10.1",
-    "karma": "^4.3.0",
+    "karma": "^6.3.16",
     "karma-jasmine": "^0.3.5",
     "karma-junit-reporter": "^0.2.2",
     "karma-phantomjs-launcher": "^0.1.4",
