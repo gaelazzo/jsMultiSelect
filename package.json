@@ -11,7 +11,7 @@
     "jsDataQuery": "https://github.com/gaelazzo/jsDataQuery"
   },
   "devDependencies": {
-    "grunt": "~1.3.0",
+    "grunt": "~1.5.3",
     "grunt-contrib-watch": "1.0.0",
     "grunt-contrib-yuidoc": "1.0.0",
     "jasmine-core": "^2.99.1",
