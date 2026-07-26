@@ -15,7 +15,7 @@
     "grunt-contrib-watch": "1.0.0",
     "grunt-contrib-yuidoc": "1.0.0",
     "jasmine-core": "^2.99.1",
-    "jasmine-node": "2.0.0-beta4",
+    "jasmine-node": "2.0.1",
     "grunt-jasmine-node": "https://github.com/gaelazzo/grunt-jasmine-node",
     "jasmine-collection-matchers": "*",
     "grunt-karma": "^0.10.1",
